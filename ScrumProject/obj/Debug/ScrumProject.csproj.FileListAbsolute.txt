@@ -1,0 +1,40 @@
+c:\users\kodherif\documents\visual studio 2015\Projects\ScrumProject\ScrumProject\bin\Debug\ScrumProject.exe.config
+c:\users\kodherif\documents\visual studio 2015\Projects\ScrumProject\ScrumProject\obj\Debug\ScrumProject.csprojResolveAssemblyReference.cache
+c:\users\kodherif\documents\visual studio 2015\Projects\ScrumProject\ScrumProject\obj\Debug\ScrumProject.FormScrum.resources
+c:\users\kodherif\documents\visual studio 2015\Projects\ScrumProject\ScrumProject\obj\Debug\ScrumProject.Properties.Resources.resources
+c:\users\kodherif\documents\visual studio 2015\Projects\ScrumProject\ScrumProject\obj\Debug\ScrumProject.csproj.GenerateResource.Cache
+c:\users\kodherif\documents\visual studio 2015\Projects\ScrumProject\ScrumProject\bin\Debug\ScrumProject.exe
+c:\users\kodherif\documents\visual studio 2015\Projects\ScrumProject\ScrumProject\bin\Debug\ScrumProject.pdb
+c:\users\kodherif\documents\visual studio 2015\Projects\ScrumProject\ScrumProject\bin\Debug\Control.Draggable.dll
+c:\users\kodherif\documents\visual studio 2015\Projects\ScrumProject\ScrumProject\obj\Debug\ScrumProject.exe
+c:\users\kodherif\documents\visual studio 2015\Projects\ScrumProject\ScrumProject\obj\Debug\ScrumProject.pdb
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3\ScrumProject\ScrumProject\bin\Debug\ScrumProject.exe.config
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3\ScrumProject\ScrumProject\obj\Debug\ScrumProject.exe
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3\ScrumProject\ScrumProject\obj\Debug\ScrumProject.pdb
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3\ScrumProject\ScrumProject\bin\Debug\ScrumProject.exe
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3\ScrumProject\ScrumProject\bin\Debug\ScrumProject.pdb
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3\ScrumProject\ScrumProject\bin\Debug\Control.Draggable.dll
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3\ScrumProject\ScrumProject\obj\Debug\ScrumProject.csprojResolveAssemblyReference.cache
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3\ScrumProject\ScrumProject\obj\Debug\ScrumProject.FormScrum.resources
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3\ScrumProject\ScrumProject\obj\Debug\ScrumProject.Properties.Resources.resources
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3\ScrumProject\ScrumProject\obj\Debug\ScrumProject.csproj.GenerateResource.Cache
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3_\ScrumProject\ScrumProject\bin\Debug\ScrumProject.exe.config
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3_\ScrumProject\ScrumProject\obj\Debug\ScrumProject.exe
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3_\ScrumProject\ScrumProject\obj\Debug\ScrumProject.pdb
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3_\ScrumProject\ScrumProject\bin\Debug\ScrumProject.exe
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3_\ScrumProject\ScrumProject\bin\Debug\ScrumProject.pdb
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3_\ScrumProject\ScrumProject\bin\Debug\Control.Draggable.dll
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3_\ScrumProject\ScrumProject\obj\Debug\ScrumProject.csprojResolveAssemblyReference.cache
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3_\ScrumProject\ScrumProject\obj\Debug\ScrumProject.FormScrum.resources
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3_\ScrumProject\ScrumProject\obj\Debug\ScrumProject.Properties.Resources.resources
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject3_\ScrumProject\ScrumProject\obj\Debug\ScrumProject.csproj.GenerateResource.Cache
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject4_\ScrumProject\ScrumProject\bin\Debug\ScrumProject.exe.config
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject4_\ScrumProject\ScrumProject\obj\Debug\ScrumProject.exe
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject4_\ScrumProject\ScrumProject\obj\Debug\ScrumProject.pdb
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject4_\ScrumProject\ScrumProject\obj\Debug\ScrumProject.csprojResolveAssemblyReference.cache
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject4_\ScrumProject\ScrumProject\obj\Debug\ScrumProject.FormScrum.resources
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject4_\ScrumProject\ScrumProject\obj\Debug\ScrumProject.Properties.Resources.resources
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject4_\ScrumProject\ScrumProject\obj\Debug\ScrumProject.csproj.GenerateResource.Cache
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject4_\ScrumProject\ScrumProject\bin\Debug\ScrumProject.exe
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject4_\ScrumProject\ScrumProject\bin\Debug\ScrumProject.pdb
+C:\Users\Muhammet\Desktop\c# apps\ScrumProject4_\ScrumProject\ScrumProject\bin\Debug\Control.Draggable.dll
