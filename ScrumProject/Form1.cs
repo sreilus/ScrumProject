@@ -39,30 +39,29 @@ namespace ScrumProject
         JButton[,] silButonlari2 = new JButton[15, 1];
         JButton[,] kilitButonlari = new JButton[15, 1];
         ToolTip butonAciklama = new ToolTip();
-        
+
         private void FormScrum_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
             OncelikliGorevYukle();
             OnceliksizGorevYukle();
-
         }
 
         public void OncelikliGorevYukle()
         {
             string aciklama = "Öncelikli görevin açıklamasını giriniz..";
             string gorevTipi = "Öncelikli";
-            GorevYukle(groupOncelikliGorev, comboOncelikliGorev, comboOncelikliGorevli, textGorevAciklama, dateSonTeslim, silButonlari, SilOncelikli, KilitleOncelikli, 50, aciklama, gorevTipi, Color.Red);
+            GorevYukle(groupOncelikliGorev, comboOncelikliGorev, comboOncelikliGorevli, textGorevAciklama, dateSonTeslim, silButonlari, SilOncelikli, KilitleOncelikli, KonumOncelikli, 50, aciklama, gorevTipi, Color.Red);
         }
 
         public void OnceliksizGorevYukle()
         {
             string aciklama = "Önceliksiz görevin açıklamasını giriniz..";
             string gorevTipi = "Önceliksiz";
-            GorevYukle(groupOnceliksizGorev, comboOnceliksizGorev, comboOnceliksizGorevli, textGorevAciklama2, dateSonTeslim2, silButonlari2, SilOnceliksiz, KilitleOnceliksiz, 250, aciklama, gorevTipi, Color.Blue);
+            GorevYukle(groupOnceliksizGorev, comboOnceliksizGorev, comboOnceliksizGorevli, textGorevAciklama2, dateSonTeslim2, silButonlari2, SilOnceliksiz, KilitleOnceliksiz, KonumOnceliksiz, 250, aciklama, gorevTipi, Color.Blue);
         }
 
-        public void GorevYukle(GroupBox[,] groupGorev, ComboBox[,] comboGorev, ComboBox[,] comboGorevli, RichTextBox[,] txtGorevAciklama, DateTimePicker[,] dateSonTeslim, JButton[,] silButonlari, EventHandler Sil, EventHandler Kilitle, int Top, string aciklama, string gorevTipi, Color renk)
+        public void GorevYukle(GroupBox[,] groupGorev, ComboBox[,] comboGorev, ComboBox[,] comboGorevli, RichTextBox[,] txtGorevAciklama, DateTimePicker[,] dateSonTeslim, JButton[,] silButonlari, EventHandler Sil, EventHandler Kilitle, MouseEventHandler TasiKonum, int Top, string aciklama, string gorevTipi, Color renk)
         {
             for (int i = 0; i < 15; i++)
             {
@@ -103,6 +102,7 @@ namespace ScrumProject
                     kilitButonlari[i, k].Click += Kilitle;
                     butonAciklama.SetToolTip(silButonlari[i, k], "Bu story'yi silmek için tıklayınız.");
                     butonAciklama.SetToolTip(kilitButonlari[i, k], "Bu story'yi kilitlemek için tıklayınız.");
+                    groupGorev[i, k].MouseUp += TasiKonum;
 
                     Point comboGorevYer = new Point(110, 30);
                     Point dateYer = new Point(10, 150);
@@ -210,47 +210,7 @@ namespace ScrumProject
             }
         }
 
-        private void pictureKilit_Click(object sender, EventArgs e)
-        {
-            GorselHareketKilitle();
-        }
-
         private int clickCountHareket = 0;
-        private void GorselHareketKilitle()
-        {
-            clickCountHareket++;
-            bool kilitliMi;
-
-            if (clickCountHareket % 2 == 1)
-                kilitliMi = true;
-
-            else kilitliMi = false;
-
-            for (int i = 0; i < 15; i++)
-            {
-                for (int k = 0; k < 1; k++)
-                {
-                    if (kilitliMi)
-                    {
-                        ControlExtension.Draggable(groupOncelikliGorev[i, k], false);
-                        ControlExtension.Draggable(groupOnceliksizGorev[i, k], false);
-                    }
-                    else
-                    {
-                        ControlExtension.Draggable(groupOncelikliGorev[i, k], true);
-                        ControlExtension.Draggable(groupOnceliksizGorev[i, k], true);
-                    }
-                }
-            }
-
-            if (kilitliMi) MessageBox.Show("Sistem görev gruplarının hareket edebilme özelliği PASİF.");
-            else MessageBox.Show("Sistem görev gruplarının hareket edebilme özelliği AKTİF.");
-        }
-
-        private void pictureKilitErisim_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private int clickCountErisim = 0;
         private void GorselErisimKilitle(int i, int k, RichTextBox[,] textGorevAciklama, DateTimePicker[,] dateSonTeslim, JButton[,] silButonlar, ComboBox[,] comboGorev, ComboBox[,] comboGorevli)
@@ -258,10 +218,10 @@ namespace ScrumProject
             clickCountErisim++;
             bool erisilebilirMi;
 
-            if (clickCountErisim % 2 == 1) erisilebilirMi = true;
-
-            else erisilebilirMi = false;
-
+            if (clickCountErisim % 2 == 1)
+                erisilebilirMi = true;
+            else
+                erisilebilirMi = false;
 
             if (erisilebilirMi)
             {
@@ -285,7 +245,6 @@ namespace ScrumProject
 
             else
                 MessageBox.Show("Sistem görev gruplarının erisilebilirliği AKTİF.");
-
         }
 
         public void SilOncelikli(object sender, EventArgs e)
@@ -308,6 +267,38 @@ namespace ScrumProject
         public void KilitleOnceliksiz(object sender, EventArgs e)
         {
             GorselErisimKilitle(((JButton)sender).i, ((JButton)sender).k, textGorevAciklama2, dateSonTeslim2, silButonlari2, comboOnceliksizGorev, comboOnceliksizGorevli);
+        }
+
+        public void KonumOncelikli(object sender, EventArgs e)
+        {
+            if (((GroupBox)sender).Location.X < 600)
+            {
+                ((GroupBox)sender).Location = new Point(330, 50);
+            }
+            else if (((GroupBox)sender).Location.X > 600 && ((GroupBox)sender).Location.X < 850)
+            {
+                ((GroupBox)sender).Location = new Point(700, 50);
+            }
+            if (((GroupBox)sender).Location.X > 850)
+            {
+                ((GroupBox)sender).Location = new Point(1028, 50);
+            }
+        }
+
+        public void KonumOnceliksiz(object sender, EventArgs e)
+        {
+            if (((GroupBox)sender).Location.X < 600)
+            {
+                ((GroupBox)sender).Location = new Point(330, 250);
+            }
+            else if (((GroupBox)sender).Location.X > 600 && ((GroupBox)sender).Location.X < 850)
+            {
+                ((GroupBox)sender).Location = new Point(700, 250);
+            }
+            if (((GroupBox)sender).Location.X > 850)
+            {
+                ((GroupBox)sender).Location = new Point(1028, 250);
+            }
         }
     }
 }

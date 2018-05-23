@@ -28,12 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormScrum));
             this.groupYonetim = new System.Windows.Forms.GroupBox();
-            this.pictureKilitErisim = new System.Windows.Forms.PictureBox();
-            this.labelDegisim = new System.Windows.Forms.Label();
-            this.labelHareket = new System.Windows.Forms.Label();
-            this.pictureKilitHareket = new System.Windows.Forms.PictureBox();
             this.labelGorevTipiEkle = new System.Windows.Forms.Label();
             this.labelGorevliEkle = new System.Windows.Forms.Label();
             this.buttonKaydet = new System.Windows.Forms.Button();
@@ -51,16 +46,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.groupYonetim.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureKilitErisim)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureKilitHareket)).BeginInit();
             this.SuspendLayout();
             // 
             // groupYonetim
             // 
-            this.groupYonetim.Controls.Add(this.pictureKilitErisim);
-            this.groupYonetim.Controls.Add(this.labelDegisim);
-            this.groupYonetim.Controls.Add(this.labelHareket);
-            this.groupYonetim.Controls.Add(this.pictureKilitHareket);
             this.groupYonetim.Controls.Add(this.labelGorevTipiEkle);
             this.groupYonetim.Controls.Add(this.labelGorevliEkle);
             this.groupYonetim.Controls.Add(this.buttonKaydet);
@@ -76,46 +65,6 @@
             this.groupYonetim.TabIndex = 0;
             this.groupYonetim.TabStop = false;
             this.groupYonetim.Text = "Yönetim Paneli";
-            // 
-            // pictureKilitErisim
-            // 
-            this.pictureKilitErisim.Image = global::ScrumProject.Properties.Resources.kilit2_fw;
-            this.pictureKilitErisim.Location = new System.Drawing.Point(171, 205);
-            this.pictureKilitErisim.Name = "pictureKilitErisim";
-            this.pictureKilitErisim.Size = new System.Drawing.Size(41, 50);
-            this.pictureKilitErisim.TabIndex = 38;
-            this.pictureKilitErisim.TabStop = false;
-            this.pictureKilitErisim.Click += new System.EventHandler(this.pictureKilitErisim_Click);
-            // 
-            // labelDegisim
-            // 
-            this.labelDegisim.AutoSize = true;
-            this.labelDegisim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelDegisim.Location = new System.Drawing.Point(10, 212);
-            this.labelDegisim.Name = "labelDegisim";
-            this.labelDegisim.Size = new System.Drawing.Size(151, 30);
-            this.labelDegisim.TabIndex = 40;
-            this.labelDegisim.Text = "Görevlerin Değiştirilmesini\r\n    Kısıtlamak İçin Tıkla\r\n";
-            // 
-            // labelHareket
-            // 
-            this.labelHareket.AutoSize = true;
-            this.labelHareket.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelHareket.Location = new System.Drawing.Point(10, 166);
-            this.labelHareket.Name = "labelHareket";
-            this.labelHareket.Size = new System.Drawing.Size(145, 45);
-            this.labelHareket.TabIndex = 39;
-            this.labelHareket.Text = "Görevlerin Hareketi Kilitle\r\n Siyah Kilit İkonuna Tıkla\r\n\r\n";
-            // 
-            // pictureKilitHareket
-            // 
-            this.pictureKilitHareket.Image = ((System.Drawing.Image)(resources.GetObject("pictureKilitHareket.Image")));
-            this.pictureKilitHareket.Location = new System.Drawing.Point(172, 157);
-            this.pictureKilitHareket.Name = "pictureKilitHareket";
-            this.pictureKilitHareket.Size = new System.Drawing.Size(38, 48);
-            this.pictureKilitHareket.TabIndex = 38;
-            this.pictureKilitHareket.TabStop = false;
-            this.pictureKilitHareket.Click += new System.EventHandler(this.pictureKilit_Click);
             // 
             // labelGorevTipiEkle
             // 
@@ -140,7 +89,7 @@
             // buttonKaydet
             // 
             this.buttonKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonKaydet.Location = new System.Drawing.Point(12, 121);
+            this.buttonKaydet.Location = new System.Drawing.Point(11, 143);
             this.buttonKaydet.Name = "buttonKaydet";
             this.buttonKaydet.Size = new System.Drawing.Size(200, 35);
             this.buttonKaydet.TabIndex = 5;
@@ -296,8 +245,6 @@
             this.Load += new System.EventHandler(this.FormScrum_Load);
             this.groupYonetim.ResumeLayout(false);
             this.groupYonetim.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureKilitErisim)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureKilitHareket)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,10 +269,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureKilitHareket;
-        private System.Windows.Forms.Label labelHareket;
-        private System.Windows.Forms.Label labelDegisim;
-        private System.Windows.Forms.PictureBox pictureKilitErisim;
     }
 }
 
