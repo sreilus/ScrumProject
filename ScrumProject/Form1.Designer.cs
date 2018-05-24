@@ -191,7 +191,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(919, 14);
+            this.button5.Location = new System.Drawing.Point(925, 14);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(5, 859);
             this.button5.TabIndex = 31;
@@ -241,7 +241,7 @@
             this.Controls.Add(this.groupYonetim);
             this.Name = "FormScrum";
             this.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.Text = " ";
+            this.Text = " Scrum Yönetim Paneli";
             this.Load += new System.EventHandler(this.FormScrum_Load);
             this.groupYonetim.ResumeLayout(false);
             this.groupYonetim.PerformLayout();
